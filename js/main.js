@@ -27,13 +27,12 @@ noButton.addEventListener("click", () => {
     noButton.style.top = Math.floor(Math.random() * maxY) + "px";
     noButton.classList.add("dodging");
   } else {
-    noButton.classList.add("burst");
-    setTimeout(() => {
-      noButton.style.display = "none";
-      snowPile.classList.add("show");
-    }, 250);
-    makeSnowBurst();
-  }
+  noButton.classList.add("burst");
+
+  setTimeout(() => {
+    noButton.style.visibility = "hidden";
+  }, 250);
+}
 });
 
 function makeSnowBurst() {
