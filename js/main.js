@@ -34,16 +34,6 @@ noButton.addEventListener("click", () => {
   }, 250);
 }
 });
-
-function makeSnowBurst() {
-  for (let i = 0; i < 22; i++) {
-    const flake = document.createElement("span");
-    flake.className = "burst-flake";
-    flake.style.setProperty("--x", (Math.random() * 220 - 110) + "px");
-    flake.style.setProperty("--y", (Math.random() * -150 - 20) + "px");
-    document.querySelector("#page-one .question-content").appendChild(flake);
-    setTimeout(() => flake.remove(), 950);
-  }
 }
 // Load the memory cards from config.js.
 const thumbnails = document.getElementById("memory-thumbnails");
