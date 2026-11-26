@@ -21,8 +21,6 @@ h1 { font-size: clamp(25px, 3.4vw, 44px); font-weight: normal; text-align: cente
 #no-button.burst { transform: scale(.1); opacity: 0; }
 .snow-pile { position: absolute; width: 130px; height: 35px; bottom: 65px; left: 30%; background: #fff; border-radius: 60% 60% 20% 20%; box-shadow: 0 -9px 0 -4px #f6f6f6; opacity: 0; transform: scale(.2); transition: all .4s; }
 .snow-pile.show { opacity: 1; transform: scale(1); }
-.snow-dot { position: absolute; top: -15px; width: 4px; height: 4px; border-radius: 50%; background: #fff; animation: snow-fall linear infinite; }
-@keyframes snow-fall { to { transform: translateY(105vh); } }
 .burst-flake { position: absolute; width: 8px; height: 8px; border-radius: 50%; background: white; left: 50%; top: 50%; animation: burst .9s ease-out forwards; }
 @keyframes burst { to { transform: translate(var(--x), var(--y)); opacity: 0; } }
 
