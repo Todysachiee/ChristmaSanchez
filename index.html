@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChristmaSanchez</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="site-frame">
+    <section class="page active" id="page-one">
+      <a class="brand" href="https://www.facebook.com/thirdy.sanchez.92" target="_blank" rel="noopener">ChristmaSanchez</a>
+      <div class="sparkle sparkle-top"></div><div class="sparkle sparkle-bottom"></div><div class="sparkle sparkle-small"></div>
+      <div class="snow" id="snow"></div>
+      <div class="question-content">
+        <img class="couple" src="images/couple-silhouette.svg" alt="Couple silhouette placeholder">
+        <h1 id="question-text">Will you be the kiss under my<br>mistletoe this Christmas?</h1>
+        <div class="choice-buttons">
+          <button id="no-button" type="button">No</button>
+          <button id="yes-button" type="button">Yes</button>
+        </div>
+        <div class="snow-pile" id="snow-pile"></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-two">
+      <a class="brand" href="https://www.facebook.com/thirdy.sanchez.92" target="_blank" rel="noopener">ChristmaSanchez</a>
+      <div class="sparkle sparkle-top"></div><div class="sparkle sparkle-bottom"></div>
+      <div class="gallery-layout">
+        <div class="main-memory">
+          <h2 id="memory-title">Title of video/photo</h2>
+          <div class="media-box" id="media-box">
+            <img id="main-photo" src="images/memory-placeholder.svg" alt="Selected memory">
+            <video id="main-video" controls hidden></video>
+          </div>
+          <p id="memory-message">short message -- --- --- --- ---- ---- ----</p>
+        </div>
+        <div class="memory-thumbnails" id="memory-thumbnails"></div>
+      </div>
+      <button class="page-arrow right-arrow" id="next-page" aria-label="Go to letter page">▶</button>
+    </section>
+
+    <section class="page" id="page-three">
+      <a class="brand" href="https://www.facebook.com/thirdy.sanchez.92" target="_blank" rel="noopener">ChristmaSanchez</a>
+      <div class="sparkle sparkle-top"></div><div class="sparkle sparkle-bottom"></div>
+      <h2 class="merry-title">Merry Christmas</h2>
+      <button class="page-arrow left-arrow" id="back-page" aria-label="Go back to memories">◀</button>
+      <div class="letter-scene">
+        <button class="envelope-button" id="open-letter" aria-label="Open letter">
+          <img src="images/envelope.png" alt="Envelope with a red heart seal">
+        </button>
+        <div class="recipient-photo"><img src="images/recipient-placeholder.svg" alt="Recipient photo placeholder"></div>
+      </div>
+      <div class="letter-overlay" id="letter-overlay">
+        <button class="close-letter" id="close-letter" aria-label="Close letter">×</button>
+        <div class="letter-paper" id="letter-paper">
+          <div class="letter-inside-photo"><img src="images/letter-photo-placeholder.svg" alt="Photo inside the letter"></div>
+          <div class="letter-text" id="letter-text">Placeholder message. Replace this with your letter.</div>
+          <div class="letter-signature" id="letter-signature">With love, Your Name</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
