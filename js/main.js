@@ -46,19 +46,6 @@ function makeSnowBurst() {
     setTimeout(() => flake.remove(), 950);
   }
 }
-
-// Create the falling snow dots on the first screen.
-const snow = document.getElementById("snow");
-for (let i = 0; i < 32; i++) {
-  const dot = document.createElement("span");
-  dot.className = "snow-dot";
-  dot.style.left = Math.random() * 100 + "%";
-  dot.style.animationDelay = Math.random() * 8 + "s";
-  dot.style.animationDuration = 5 + Math.random() * 8 + "s";
-  dot.style.opacity = 0.2 + Math.random() * 0.7;
-  snow.appendChild(dot);
-}
-
 // Load the memory cards from config.js.
 const thumbnails = document.getElementById("memory-thumbnails");
 const memoryTitle = document.getElementById("memory-title");
