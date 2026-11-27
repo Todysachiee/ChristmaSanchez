@@ -34,7 +34,6 @@ noButton.addEventListener("click", () => {
   }, 250);
 }
 });
-}
 // Load the memory cards from config.js.
 const thumbnails = document.getElementById("memory-thumbnails");
 const memoryTitle = document.getElementById("memory-title");
