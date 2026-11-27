@@ -119,6 +119,84 @@ h1 { font-size: clamp(25px, 3.4vw, 44px); font-weight: normal; text-align: cente
 .letter-text { white-space: pre-wrap; line-height: 1.65; font-size: clamp(15px, 1.5vw, 20px); }
 .letter-signature { margin-top: 20px; font-style: italic; text-align: right; }
 
+
+/* DESKTOP GALLERY FIX */
+@media (min-width: 701px) {
+
+  #page-two {
+    overflow: hidden;
+  }
+
+  .gallery-layout {
+    height: 100%;
+    width: 100%;
+    padding: 100px 65px 55px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(180px, 0.8fr);
+    gap: 30px;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .main-memory {
+    min-width: 0;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-memory h2 {
+    margin: 0 0 15px;
+    font-size: clamp(20px, 2vw, 30px);
+  }
+
+  .media-box {
+    width: 100%;
+    max-height: 48vh;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #f0e2d3;
+  }
+
+  .media-box img,
+  .media-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  #memory-message {
+    margin: 12px 0 0;
+    font-size: clamp(14px, 1.3vw, 19px);
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .memory-thumbnails {
+    min-width: 0;
+    max-height: 48vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    overflow: hidden;
+  }
+
+  .memory-thumb {
+    width: 100%;
+    min-width: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+
+  .memory-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 700px) {
   body { overflow: auto; }
   .site-frame { padding: 12px; min-height: 100svh; }
