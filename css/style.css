@@ -19,10 +19,6 @@ h1 { font-size: clamp(25px, 3.4vw, 44px); font-weight: normal; text-align: cente
 .choice-buttons button:hover { transform: translateY(-2px); }
 #no-button.dodging { z-index: 20; }
 #no-button.burst { transform: scale(.1); opacity: 0; }
-.snow-pile { position: absolute; width: 130px; height: 35px; bottom: 65px; left: 30%; background: #fff; border-radius: 60% 60% 20% 20%; box-shadow: 0 -9px 0 -4px #f6f6f6; opacity: 0; transform: scale(.2); transition: all .4s; }
-.snow-pile.show { opacity: 1; transform: scale(1); }
-.burst-flake { position: absolute; width: 8px; height: 8px; border-radius: 50%; background: white; left: 50%; top: 50%; animation: burst .9s ease-out forwards; }
-@keyframes burst { to { transform: translate(var(--x), var(--y)); opacity: 0; } }
 
 /* Memory gallery page */
 .gallery-layout { height: 100%; padding: 6.5% 6.5% 5%; display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(180px, .8fr); gap: 9%; align-items: center; }
