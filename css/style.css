@@ -60,6 +60,39 @@ h1 { font-size: clamp(25px, 3.4vw, 44px); font-weight: normal; text-align: cente
   aspect-ratio: 16 / 9;
   min-height: 0;
 }
+
+/* Page navigation arrows */
+.page-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 15;
+  transform: translateY(-50%);
+  background: #f2e5d7;
+  color: #731919;
+  border: 2px solid #161616;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 23px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 3px #000;
+}
+
+.right-arrow {
+  right: 18px;
+}
+
+.left-arrow {
+  left: 18px;
+}
+
+.page-arrow:hover {
+  transform: translateY(-50%) scale(1.08);
+}
+
 /* Letter page */
 .merry-title { position: absolute; top: 0; left: 3%; margin: 0; font-family: cursive; font-weight: normal; font-size: clamp(38px, 6vw, 75px); text-shadow: 0 1px 4px #4a1010; }
 .letter-scene { position: absolute; inset: 12% 8% 5% 8%; display: flex; align-items: center; justify-content: center; }
@@ -103,10 +136,27 @@ h1 { font-size: clamp(25px, 3.4vw, 44px); font-weight: normal; text-align: cente
   .memory-thumbnails { flex-direction: row; gap: 8px; }
   .memory-thumb { aspect-ratio: 4 / 3; flex: 1; min-width: 0; }
   .memory-thumb span { font-size: 10px; }
-  .right-arrow { right: 1px; top: auto; bottom: 8px; transform: none; font-size: 35px; }
-  .right-arrow:hover { transform: scale(1.08); }
-  .left-arrow { left: 1px; top: auto; bottom: 8px; transform: none; font-size: 35px; }
-  .left-arrow:hover { transform: scale(1.08); }
+  .right-arrow {
+  right: 10px;
+  top: auto;
+  bottom: 8px;
+  transform: none;
+}
+
+.right-arrow:hover {
+  transform: scale(1.08);
+}
+
+.left-arrow {
+  left: 10px;
+  top: auto;
+  bottom: 8px;
+  transform: none;
+}
+
+.left-arrow:hover {
+  transform: scale(1.08);
+}
   .merry-title { top: 8%; left: 5%; font-size: clamp(36px, 11vw, 58px); }
   .letter-scene { inset: 20% 6% 7%; align-items: center; }
   .envelope-button { width: 72%; max-width: 420px; }
